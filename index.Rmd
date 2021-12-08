@@ -31,7 +31,7 @@ See [http://rmarkdown.rstudio.com/](http://rmarkdown.rstudio.com/) for all the a
 
 
 Here's my first code chunk.
-```{r}
+```{r} 
 library(latex2exp)
 library(scico)
 library(dplyr)
@@ -49,7 +49,7 @@ provinceNight <- read_excel("provinceNight.xls")
 
 
 ```{r,warning=FALSE,message=FALSE}
-ggplot(provinceNight) +
+ggplot(provinceNight) + 
  geom_line(aes(year,mean,color = province)) +
  theme(legend.position="bottom",
         legend.text=element_text(size=7),
