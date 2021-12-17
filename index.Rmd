@@ -175,7 +175,7 @@ cn2020points %>%
 ```
 
 ## The distribution of nighttime light value in each county
-```{R}
+```{R message = FALSE,warning = FALSE}
 readxl::read_xlsx('data/County.xlsx') %>% 
   dplyr::filter(Year == 2020) %>% 
   dplyr::select(-Year) %>% 
